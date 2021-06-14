@@ -1,0 +1,65 @@
+.container-conteudo{
+    margin-top: 8px;
+}
+
+
+.card{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+
+.container-principal{
+    height: 600px;
+}
+
+
+footer{
+    text-align: center;
+    padding:20px;
+    background-color:#f0f4f5;
+    width: 100%;
+   
+}
+
+.lead{
+    color: black;
+}
+.navbar-brand{
+    padding: 20px;
+}
+
+.nav-item{
+    size: 12px;
+}
+
+.row{
+    width: 100%;
+    padding: 20px;
+}
+
+.lead{
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-ul{
+    list-style: none;
+}
+
+.btn{
+    
+        
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+      
+}
+
+
+  

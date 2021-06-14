@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" th:href="@{../img/logo.png}" type="image/png">
+    <title>Semana da arte</title>
+
+     <!--CSS-->
+     <link rel="stylesheet" th:href="@{/bootstrap-5.0.0/css/bootstrap.min.css}">
+     <link rel="stylesheet" th:href="@{/fontawesome-5.15.3/css/all.css}">
+     <link rel="stylesheet" th:href="@{/css/estilo.css}">
+</head>
+<body>
+    
+  <!--MENU-->
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" th:href="@{/}">Semana de arte</a>
+  <!--BOTÃO MENU-->
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+    aria-controls="navbarMenu" aria-expanded="false">
+    <span class="navbar-toggler-icon"></span>
+   </button>  
+    <!--ITENS DO MENU-->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active" th:href="@{/}">Principal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/projeto/list}">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" th:href="@{https://linktr.ee/gregg.rm}">Sobre mim</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Site Oficial Semana de Arte SENAI Santa catarina</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<!-- CARDS -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img th:src="@{../img/pele.jpg}" class="card-img-top" alt="escreva aqui">
+        <div class="card-body">
+          <h5 class="card-title">Conheça o catarinense que superou Pelé em gols em 1966
+          </h5>
+          <p class="card-text">Em 1966 Norberto Hoppe, do Caxias, de Joinville (foto), superou Pelé e foi artilheiro do Brasil com 33 gols </p>
+          <a href="http://www.memoriaesportivadesc.com/2019/02/conheca-o-catarinense-que-superou-pele.html" class="btn btn-primary">Leia Completo</a>
+        </div>
+      </div> 
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img th:src="@{../img/Metropol.jpg}" class="card-img-top" alt="escreva aqui">
+        <div class="card-body">
+          <h5 class="card-title">Metropol, de Criciúma, de 1968, é o melhor catarinense no Brasileirão</h5>
+          <p class="card-text">Metropol, de Criciúma, melhor campanha em 1968 </p>
+          <a href="http://www.memoriaesportivadesc.com/2017/04/voce-sabia-que-o-metropol-de-criciuma-e.html" class="btn btn-primary">Leia Completo</a>
+        </div>
+      </div> 
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img th:src="@{../img/judo.jpg}" class="card-img-top" alt="escreva aqui">
+        <div class="card-body">
+          <h5 class="card-title"> 1ª competição de Judô dos Jogos Abertos de SC em 1971</h5>
+          <p class="card-text">ESeleção de Joinville: campeã da 1ª competição de Judô  </p>
+          <a href="http://www.memoriaesportivadesc.com/2017/08/selecao-de-joinville-campea-da-1.html" class="btn btn-primary">Leia Completo</a>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img th:src="@{../img/miami.jpg}" class="card-img-top" alt="escreva aqui">
+        <div class="card-body">
+          <h5 class="card-title"> Time do Miami de futebol de areia de Florianópolis em 1980          </h5>
+          <p class="card-text">a foto, o time do Miami, de futebol de areia de Florianópolis, em um torneio em Balneário Camboriú em 1980.</p>
+          <a href="http://www.memoriaesportivadesc.com/2014/09/time-do-miami-de-futebol-de-areia-de.html" class="btn btn-primary">Leia Completo</a>
+        </div>
+      </div> 
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img th:src="@{../img/pele2.jpg}" class="card-img-top" alt="escreva aqui">
+        <div class="card-body">
+          <h5 class="card-title"> Pelé nos Jasc de 1996    </h5>
+          <p class="card-text">Pelé em 1996 nos Jogos Abertos de Santa Catarina (Jasc)</p>
+          <a href="http://www.fesporte.sc.gov.br/eventos/jasc/item/3895-pele-80-anos-rei-do-futebol-participou-dos-jasc-1996/3895-pele-80-anos-rei-do-futebol-participou-dos-jasc-1996" class="btn btn-primary">Leia Completo</a>
+        </div>
+      </div> 
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img th:src="@{../img/guga.jpg}" class="card-img-top" alt="escreva aqui">
+        <div class="card-body">
+          <h5 class="card-title">Há 20 anos Guga vencia seu primeiro Roland Garros </h5>
+          <p class="card-text">Guga é homenageado pelo Governo de SC na abertura dos Jasc 2011</p>
+          <a href="http://www.memoriaesportivadesc.com/2017/06/ha-20-anos-guga-vencia-seu-primeiro.html" class="btn btn-primary">Leia Completo</a>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img th:src="@{../img/tenis.jpg}" class="card-img-top" alt="escreva aqui">
+        <div class="card-body">
+          <h5 class="card-title">Alexia Nakashima campeã sul-americana 2016          </h5>
+          <p class="card-text">Esta é Alexia Nakashima, de Joinville, e da seleção brasileira.</p>
+          <a href="http://www.memoriaesportivadesc.com/2017/06/de-joinville-para-o-mundo-essa-e-alexia.html" class="btn btn-primary">Leia Completo</a>
+        </div>
+      </div> 
+    </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img th:src="@{../img/para.jpg}" class="card-img-top" alt="escreva aqui">
+          <div class="card-body">
+            <h5 class="card-title">SC conquista 94 medalhas nas Paralimpíadas Escolares em 2017            </h5>
+            <p class="card-text">Um dos momentos mais marcantes da participação de Santa Catarina nas Paralimpíadas Escolares</p>
+            <a href="http://www.memoriaesportivadesc.com/search?q=94+medalhas" class="btn btn-primary">Leia Completo</a>
+          </div>
+        </div> 
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img th:src="@{../img/vitor1.jpg}" class="card-img-top" alt="escreva aqui">
+        <div class="card-body">
+          <h5 class="card-title">Campeão mundial escolar de taekwondo Vitor Porto, de São José, 2018.          </h5>
+          <p class="card-text">Campeão mundial escolar, sul-americano e brasileiro de taekwondo sub-23 Vitor Porto, de São José, SC</p>
+          <a href="http://www.memoriaesportivadesc.com/2018/08/veja-luta-final-do-campeao-mundial.html?q=vitor+porto" class="btn btn-primary">Leia Completo</a>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img th:src="@{../img/basquete.jpg}" class="card-img-top" alt="escreva aqui">
+        <div class="card-body">
+          <h5 class="card-title">Joinville é campeão no basquete feminino </h5>
+          <p class="card-text">Com o placar sendo alternado a favor de uma ou de outra equipe, a vitória consolidou-se somente no último minuto de jogo.</p>
+          <a href="http://www.memoriaesportivadesc.com/2018/07/joinville-e-campeao-no-basquete-feminino.html?q=basquete+feminino" class="btn btn-primary">Leia Completo</a>
+        </div>
+      </div> 
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img th:src="@{../img/ana.jpeg}" class="card-img-top" alt="escreva aqui">
+        <div class="card-body">
+          <h5 class="card-title">Ana Vitória, de Joinville, é campeã nos Jogos Universitários Paralímpicos em SP</h5>
+          <p class="card-text">Ana Vitória, de Joinville, fez bonito na natação na 3ª edição nacional dos Jogos Universitários Paralímpicos realizados de 10 a 15 de maio em São Paulo. </p>
+          <a href="http://www.memoriaesportivadesc.com/2018/05/ana-vitoria-de-joinville-e-campea-nos.html?q=ANA+VITÓRIA" class="btn btn-primary">Leia Completo</a>
+        </div>
+      </div> 
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img th:src="@{../img/marquinhos.jpg}" class="card-img-top" alt="escreva aqui">
+        <div class="card-body">
+          <h5 class="card-title">Marquinhos, do Avaí, encerra a carreira no campeonato estadual com empate com a Chapecoense </h5>
+          <p class="card-text">A partida, realizada dia 1º de abril, terminou em 2 a 2 contra a Chapecoense no estádio da Ressacada, em Florianópolis. </p>
+          <a href="http://www.memoriaesportivadesc.com/2018/04/marquinhos-do-avai-encerra-carreira-no.html?q=marquinhos" class="btn btn-primary">Leia Completo</a>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+ <!--RODAPÉ-->
+ <footer class="footer-color">
+  <ul class="footer-ul">
+    <li>Semana de artes!</li>
+    <li>Trabalhos produzidos pelos estudantes senai</li>
+    <li>E-mail: gregori_monteiro@estudante.sc.senai.br</li>
+  </ul>
+</footer>
+
+
+      <!--JS-->
+  <script th:src="@{/js/jquery-3.6.0.min.js}"></script>
+  <script th:src="@{/js/popper.min.js}"></script>
+  <script th:src="@{/bootstrap-5.0.0/js/bootstrap.min.js}">
+  </script>
+</body>
+</html>
