@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" th:href="@{img/logo.png}" type="image/png">
-    <title>Semana da arte</title>
+    <title>Memória Esportiva</title>
 
      <!--CSS-->
      <link rel="stylesheet" th:href="@{/bootstrap-5.0.0/css/bootstrap.min.css}">
@@ -36,22 +36,28 @@
       </button>  
     <!--ITENS DO MENU-->
     <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link active" th:href="@{/}">Principal</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{/projeto/list}">Projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" th:href="@{https://linktr.ee/gregg.rm}">Sobre mim</a>
+      <ul class="navbar-nav  mr-auto">
+          <li class="nav-item">
+              <a class="nav-link active" th:href="@{/}">Memória Esportiva</a>
           </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Site Oficial Semana de Arte SENAI Santa catarina</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+          <li class="nav-item">
+              <a class="nav-link" th:href="@{/projeto/list}">Memória Esportiva - Pesquisas</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link active" th:href="@{/projeto/pop}">Pop Arte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="@{/projeto/sobre}">Nossa Pop Arte</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{https://linktr.ee/gregg.rm}">Sobre mim</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Site Oficial Semana de Arte SENAI Santa catarina</a>
+          </li>
+      </ul>
+  </div>
+  </nav>
 <!--CARROSEL-->
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

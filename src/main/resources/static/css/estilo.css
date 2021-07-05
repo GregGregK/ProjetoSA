@@ -31,9 +31,13 @@ footer{
 }
 
 .nav-item{
-    size: 12px;
-}
+    size: 10px;
 
+    
+}
+.nav-link{
+    font-size: small;
+}
 .row{
     width: 100%;
     padding: 20px;
@@ -61,5 +65,23 @@ footer{
       
 }
 
+.img{
+    width: 65%;
+}
 
-  
+.imgdiv{
+    display: flex;
+    justify-content: center;
+}
+
+.Titulo{
+    text-align: center;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+    color: transparent;
+}
+
+.lead{
+    text-align: left;
+}
+
+
