@@ -13,33 +13,53 @@
      <link rel="stylesheet" th:href="@{/css/estilo.css}">
 </head>
 <body>
-    
-  <!--MENU-->
-   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+<!--MENU-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <a class="navbar-brand" th:href="@{/}">Semana de arte</a>
-  <!--BOTÃO MENU-->
-  <div class="collapse navbar-collapse" id="navbarMenu">
-    <ul class="navbar-nav  mr-auto">
-        <li class="nav-item">
-            <a class="nav-link active" th:href="@{/}">Memória Esportiva</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" th:href="@{/projeto/list}">Memória Esportiva - Pesquisas</a>
-        </li>
-      <li class="nav-item">
-        <a class="nav-link active" th:href="@{/projeto/pop}">Pop Arte</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" th:href="@{/projeto/sobre}">Nossa Pop Arte</a>
-      </li>
-        <li class="nav-item">
-          <a class="nav-link" th:href="@{https://linktr.ee/gregg.rm}">Sobre mim</a>
-      </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Site Oficial Semana de Arte SENAI Santa catarina</a>
-        </li>
-    </ul>
-</div>
+
+
+
+
+    <!--BOTÃO MENU-->
+
+
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+            aria-controls="navbarMenu" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+
+
+
+
+    </button>
+    <!--ITENS DO MENU-->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav  mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active" th:href="@{/}">Memória Esportiva</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/projeto/list}">Memória Esportiva - Pesquisas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" th:href="@{/projeto/pop}">Pop Arte</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/projeto/sobre}">Nossa Pop Arte</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/funcionario/list}">Participantes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{https://linktr.ee/gregg.rm}">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Site Oficial Semana de Arte SENAI Santa catarina</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <!--Imagem-->

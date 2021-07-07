@@ -84,4 +84,73 @@ footer{
     text-align: left;
 }
 
+.container-funcionario{
+    margin-top: 16px;
+    padding-top: 8px;
+    border: 1px solid #03524c ;
+    border-radius: 15px;
+}
 
+.td-controle{
+    width: 50px;
+}
+.container-header-cargo{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 24px;
+    background-color: #03524c ;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    width:var(--width-cargo);
+}
+
+.container-header-funcionario{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 24px;
+    background-color: #03524c ;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.container-btn-novo{
+    width: 100%;
+    text-align: right;
+}
+
+.container-cargo-btn-novo{
+    text-align: right;
+    width: var(--width-cargo);
+}
+
+.contanier-body-funcionario{
+    margin-top: 16px;
+    padding-top: 8px;
+    border: 1px solid #03524c ;
+    border-radius: 15px;
+}
+
+.contanier-body-cargo{
+    margin-top: 16px;
+    padding-top: 8px;
+    border: 1px solid #03524c ;
+    border-radius: 15px;
+    width: var(--width-cargo);
+}
+
+.container-form{
+    width: 50%;
+}
+
+.btn-form{
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.modal-header-color{
+    background: #03524c;
+    color:white;
+    font-weight: bold;
+}

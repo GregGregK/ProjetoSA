@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" th:href="@{/img/logo.png}" type="image/png">
+
+    <title>3AB Sistemas Digitais</title>
+    <!--CSS-->
+    <link rel="stylesheet" th:href="@{/bootstrap-5.0.0/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/fontawesome-5.15.3/css/all.css}">
+    <link rel="stylesheet" th:href="@{/css/estilo.css}">
+</head>
+<body>
+<!--MENU-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" th:href="@{/}">Semana de arte</a>
+
+
+
+
+    <!--BOTÃO MENU-->
+
+
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+            aria-controls="navbarMenu" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+
+
+
+
+    </button>
+    <!--ITENS DO MENU-->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav  mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active" th:href="@{/}">Voltar para o site</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/funcionario/list}">Participantes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/cargo/list}">Adicionar Cargo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{https://linktr.ee/gregg.rm}">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Site Oficial Semana de Arte SENAI Santa catarina</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--CONTEÚDO-->
+<div class="container container-header-funcionario">
+    <h3>Funcionários</h3>
+</div>
+
+<div class="container container-btn-novo">
+    <a th:href="@{/funcionario/add}"
+       class="btn btn-outline-dark">
+        <i class="fa fa-file"></i> Novo
+    </a>
+</div>
+
+<div class="container container-funcionario table-responsive table-responsive">
+
+    <table class="table table-hover table-striped">
+        <thead>
+        <tr class="table-dark">
+            <th>Código</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th colspan="3" >Cargo</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="funcionario : ${funcionarios}">
+            <td th:text="${funcionario.id}"></td>
+            <td th:text="${funcionario.nome}"></td>
+            <td th:text="${funcionario.email}"></td>
+            <td th:text="${funcionario.cargo}"></td>
+            <td class="td-controle">
+                <a th:href="@{'/funcionario/edit/' + ${funcionario.id}}"
+                   class="btn btn-outline-secondary">
+                    <i class="fa fa-edit"></i>
+                </a>
+            </td>
+            <td class="td-controle">
+                <a th:onclick="|showModalDeletar('funcionario', ${funcionario.id})|"
+                   class="btn btn-outline-danger">
+                    <i class="fa fa-trash"></i>
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--MODAL DELETAR-->
+<div class="modal" tabindex="-1" id="modalDeletar">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-header-color">
+                <h5 class="modal-title">Aviso!</h5>
+                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Você deseja realmente excluir o Funcionário?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger"
+                        th:onclick="deletar()">
+                    Deletar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--RODAPÉ-->
+<footer class="footer-color">
+    <ul class="footer-ul">
+        <li>Semana de artes!</li>
+        <li>Trabalhos produzidos pelos estudantes senai</li>
+        <li>E-mail: gregori_monteiro@estudante.sc.senai.br</li>
+    </ul>
+</footer>
+<!--JS-->
+<script th:src="@{/js/jquery-3.6.0.min.js}"></script>
+<script th:src="@{/js/popper.min.js}"></script>
+<script th:src="@{/bootstrap-5.0.0/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>
