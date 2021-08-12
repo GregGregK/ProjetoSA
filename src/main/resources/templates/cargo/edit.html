@@ -14,46 +14,36 @@
 </head>
 <body>
 <!--MENU-->
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <a class="navbar-brand" th:href="@{/}">Semana de arte</a>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" th:href="@{/}">Semana da arte</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-
-
-
-    <!--BOTÃO MENU-->
-
-
-
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
-            aria-controls="navbarMenu" aria-expanded="false">
-        <span class="navbar-toggler-icon"></span>
-
-
-
-
-    </button>
-    <!--ITENS DO MENU-->
-    <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav  mr-auto">
-            <li class="nav-item">
-                <a class="nav-link active" th:href="@{/}">Voltar para o site</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{/funcionario/list}">Participantes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{/cargo/list}">Adicionar Cargo</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{https://linktr.ee/gregg.rm}">Sobre nós</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Site Oficial Semana de Arte SENAI Santa catarina</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" th:href="@{/}">Voltar para o site</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/funcionario/list}">Participantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" th:href="@{/cargo/list}">Adicionar Cargo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{https://linktr.ee/gregg.rm}">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Site Oficial Semana de Arte SENAI Santa catarina</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 <!--CONTEÚDO-->
 <div class="container
         container-header-cargo">
