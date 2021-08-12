@@ -98,7 +98,7 @@ footer{
     margin-top: 16px;
     margin-bottom: 16px;
     padding: 24px;
-    background-color: #03524c ;
+    background-color: #0b0f0f;
     color: white;
     border-radius: 15px;
     text-align: center;
@@ -109,7 +109,7 @@ footer{
     margin-top: 16px;
     margin-bottom: 16px;
     padding: 24px;
-    background-color: #03524c ;
+    background-color: #0b0f0f ;
     color: white;
     border-radius: 15px;
     text-align: center;
@@ -128,14 +128,14 @@ footer{
 .contanier-body-funcionario{
     margin-top: 16px;
     padding-top: 8px;
-    border: 1px solid #03524c ;
+    border: 1px solid rgb(17, 20, 20) ;
     border-radius: 15px;
 }
 
 .contanier-body-cargo{
     margin-top: 16px;
     padding-top: 8px;
-    border: 1px solid #03524c ;
+    border: 1px solid rgb(17, 20, 20) ;
     border-radius: 15px;
     width: var(--width-cargo);
 }
@@ -147,10 +147,13 @@ footer{
 .btn-form{
     width: 100%;
     margin-bottom: 8px;
+    background-color: black;
 }
 
 .modal-header-color{
-    background: #03524c;
+    background: #050e0d;
     color:white;
     font-weight: bold;
 }
+
+
