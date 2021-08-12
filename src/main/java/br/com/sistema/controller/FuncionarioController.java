@@ -23,7 +23,7 @@ public class FuncionarioController {
     @GetMapping("/funcionario/list")
     public String list(Model model){
         model.addAttribute("funcionarios",funcionarioService.findAll());
-        return "/funcionario/list";
+        return "funcionario/list";
     }
 
     @GetMapping("/funcionario/add")
@@ -68,7 +68,6 @@ public class FuncionarioController {
         if (funcionarioService.delete(id)){
             return "redirect:/funcionario/list";
         } else {
-            //TODO: tratar esse erro
             return "redirect:/funcionario/list";
         }
     }
